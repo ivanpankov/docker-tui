@@ -1,0 +1,16 @@
+[package]
+name = "docker-tui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+bollard = { version = "0.18", features = ["chrono"] }
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+crossterm = "0.29"
+futures-util = "0.3"
+ratatui = "0.30"
+serde_json = "1"
+thiserror = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "time"] }
+unicode-width = "0.2"
